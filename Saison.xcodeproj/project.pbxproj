@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F288D302A61DEE0003BDBAF /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F288D2F2A61DEE0003BDBAF /* ElementView.swift */; };
 		2F395D452A61926400E39B44 /* SaisonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F395D442A61926400E39B44 /* SaisonApp.swift */; };
 		2F395D472A61926400E39B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F395D462A61926400E39B44 /* ContentView.swift */; };
 		2F395D492A61926800E39B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F395D482A61926800E39B44 /* Assets.xcassets */; };
 		2F395D4C2A61926800E39B44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F395D4B2A61926800E39B44 /* Preview Assets.xcassets */; };
+		2F395D592A61A99C00E39B44 /* SaisonData in Frameworks */ = {isa = PBXBuildFile; productRef = 2F395D582A61A99C00E39B44 /* SaisonData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F288D2F2A61DEE0003BDBAF /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
 		2F395D412A61926400E39B44 /* Saison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F395D442A61926400E39B44 /* SaisonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaisonApp.swift; sourceTree = "<group>"; };
 		2F395D462A61926400E39B44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F395D482A61926800E39B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F395D4B2A61926800E39B44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F395D572A61A96300E39B44 /* SaisonData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SaisonData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F395D592A61A99C00E39B44 /* SaisonData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		2F395D382A61926400E39B44 = {
 			isa = PBXGroup;
 			children = (
+				2F395D572A61A96300E39B44 /* SaisonData */,
 				2F395D432A61926400E39B44 /* Saison */,
 				2F395D422A61926400E39B44 /* Products */,
+				2F395D532A61A8B200E39B44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,7 @@
 			children = (
 				2F395D442A61926400E39B44 /* SaisonApp.swift */,
 				2F395D462A61926400E39B44 /* ContentView.swift */,
+				2F288D2F2A61DEE0003BDBAF /* ElementView.swift */,
 				2F395D482A61926800E39B44 /* Assets.xcassets */,
 				2F395D4A2A61926800E39B44 /* Preview Content */,
 			);
@@ -65,6 +73,13 @@
 				2F395D4B2A61926800E39B44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F395D532A61A8B200E39B44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +98,9 @@
 			dependencies = (
 			);
 			name = Saison;
+			packageProductDependencies = (
+				2F395D582A61A99C00E39B44 /* SaisonData */,
+			);
 			productName = Saison;
 			productReference = 2F395D412A61926400E39B44 /* Saison.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F395D472A61926400E39B44 /* ContentView.swift in Sources */,
+				2F288D302A61DEE0003BDBAF /* ElementView.swift in Sources */,
 				2F395D452A61926400E39B44 /* SaisonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +363,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F395D582A61A99C00E39B44 /* SaisonData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SaisonData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F395D392A61926400E39B44 /* Project object */;
 }
