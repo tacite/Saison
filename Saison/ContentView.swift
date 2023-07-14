@@ -28,8 +28,13 @@ struct ContentView: View {
             Section(header: Text("Fruit")) {
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: columns, spacing: 10) {
-                        ForEach(elements) { element in
-                            Text(element.name)
+                        ForEach(elements) { fruit in
+                            if isA(typeFood: .Fruit, element: fruit) {
+                                ElementView(element: fruit)
+                                    .frame(height: 35)
+                                    .background(.custom)
+                                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+                            }
                         }
                     }
                 }
@@ -39,8 +44,13 @@ struct ContentView: View {
             Section(header: Text("légume")) {
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: columns, spacing: 10) {
-                        ForEach(elements) { element in
-                            Text(element.name)
+                        ForEach(elements) { vegetable in
+                            if isA(typeFood: .Vegetable, element: vegetable) {
+                                ElementView(element: vegetable)
+                                    .frame(height: 35)
+                                    .background(.custom)
+                                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+                            }
                         }
                     }
                     .padding(.horizontal)
