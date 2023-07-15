@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2F288D302A61DEE0003BDBAF /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F288D2F2A61DEE0003BDBAF /* ElementView.swift */; };
+		2F288D372A61E580003BDBAF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F288D362A61E580003BDBAF /* WidgetKit.framework */; };
+		2F288D392A61E580003BDBAF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F288D382A61E580003BDBAF /* SwiftUI.framework */; };
+		2F288D3C2A61E580003BDBAF /* SaisonWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F288D3B2A61E580003BDBAF /* SaisonWidgetBundle.swift */; };
+		2F288D3E2A61E580003BDBAF /* SaisonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F288D3D2A61E580003BDBAF /* SaisonWidget.swift */; };
+		2F288D402A61E583003BDBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F288D3F2A61E583003BDBAF /* Assets.xcassets */; };
+		2F288D442A61E583003BDBAF /* SaisonWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F288D352A61E580003BDBAF /* SaisonWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F288D4A2A61EBB7003BDBAF /* SaisonData in Frameworks */ = {isa = PBXBuildFile; productRef = 2F288D492A61EBB7003BDBAF /* SaisonData */; };
 		2F395D452A61926400E39B44 /* SaisonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F395D442A61926400E39B44 /* SaisonApp.swift */; };
 		2F395D472A61926400E39B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F395D462A61926400E39B44 /* ContentView.swift */; };
 		2F395D492A61926800E39B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F395D482A61926800E39B44 /* Assets.xcassets */; };
@@ -15,8 +22,39 @@
 		2F395D592A61A99C00E39B44 /* SaisonData in Frameworks */ = {isa = PBXBuildFile; productRef = 2F395D582A61A99C00E39B44 /* SaisonData */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2F288D422A61E583003BDBAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F395D392A61926400E39B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F288D342A61E580003BDBAF;
+			remoteInfo = SaisonWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F288D482A61E583003BDBAF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F288D442A61E583003BDBAF /* SaisonWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2F288D2F2A61DEE0003BDBAF /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
+		2F288D352A61E580003BDBAF /* SaisonWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SaisonWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F288D362A61E580003BDBAF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2F288D382A61E580003BDBAF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2F288D3B2A61E580003BDBAF /* SaisonWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaisonWidgetBundle.swift; sourceTree = "<group>"; };
+		2F288D3D2A61E580003BDBAF /* SaisonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaisonWidget.swift; sourceTree = "<group>"; };
+		2F288D3F2A61E583003BDBAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F288D412A61E583003BDBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F395D412A61926400E39B44 /* Saison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F395D442A61926400E39B44 /* SaisonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaisonApp.swift; sourceTree = "<group>"; };
 		2F395D462A61926400E39B44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +64,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F288D322A61E580003BDBAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F288D392A61E580003BDBAF /* SwiftUI.framework in Frameworks */,
+				2F288D4A2A61EBB7003BDBAF /* SaisonData in Frameworks */,
+				2F288D372A61E580003BDBAF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F395D3E2A61926400E39B44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,11 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F288D3A2A61E580003BDBAF /* SaisonWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2F288D3B2A61E580003BDBAF /* SaisonWidgetBundle.swift */,
+				2F288D3D2A61E580003BDBAF /* SaisonWidget.swift */,
+				2F288D3F2A61E583003BDBAF /* Assets.xcassets */,
+				2F288D412A61E583003BDBAF /* Info.plist */,
+			);
+			path = SaisonWidget;
+			sourceTree = "<group>";
+		};
 		2F395D382A61926400E39B44 = {
 			isa = PBXGroup;
 			children = (
 				2F395D572A61A96300E39B44 /* SaisonData */,
 				2F395D432A61926400E39B44 /* Saison */,
+				2F288D3A2A61E580003BDBAF /* SaisonWidget */,
 				2F395D422A61926400E39B44 /* Products */,
 				2F395D532A61A8B200E39B44 /* Frameworks */,
 			);
@@ -51,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2F395D412A61926400E39B44 /* Saison.app */,
+				2F288D352A61E580003BDBAF /* SaisonWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +139,8 @@
 		2F395D532A61A8B200E39B44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F288D362A61E580003BDBAF /* WidgetKit.framework */,
+				2F288D382A61E580003BDBAF /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +148,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2F288D342A61E580003BDBAF /* SaisonWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F288D452A61E583003BDBAF /* Build configuration list for PBXNativeTarget "SaisonWidgetExtension" */;
+			buildPhases = (
+				2F288D312A61E580003BDBAF /* Sources */,
+				2F288D322A61E580003BDBAF /* Frameworks */,
+				2F288D332A61E580003BDBAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaisonWidgetExtension;
+			packageProductDependencies = (
+				2F288D492A61EBB7003BDBAF /* SaisonData */,
+			);
+			productName = SaisonWidgetExtension;
+			productReference = 2F288D352A61E580003BDBAF /* SaisonWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		2F395D402A61926400E39B44 /* Saison */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F395D4F2A61926800E39B44 /* Build configuration list for PBXNativeTarget "Saison" */;
@@ -92,10 +175,12 @@
 				2F395D3D2A61926400E39B44 /* Sources */,
 				2F395D3E2A61926400E39B44 /* Frameworks */,
 				2F395D3F2A61926400E39B44 /* Resources */,
+				2F288D482A61E583003BDBAF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2F288D432A61E583003BDBAF /* PBXTargetDependency */,
 			);
 			name = Saison;
 			packageProductDependencies = (
@@ -115,6 +200,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					2F288D342A61E580003BDBAF = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					2F395D402A61926400E39B44 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -134,11 +222,20 @@
 			projectRoot = "";
 			targets = (
 				2F395D402A61926400E39B44 /* Saison */,
+				2F288D342A61E580003BDBAF /* SaisonWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F288D332A61E580003BDBAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F288D402A61E583003BDBAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F395D3F2A61926400E39B44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +248,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F288D312A61E580003BDBAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F288D3E2A61E580003BDBAF /* SaisonWidget.swift in Sources */,
+				2F288D3C2A61E580003BDBAF /* SaisonWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F395D3D2A61926400E39B44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,7 +269,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2F288D432A61E583003BDBAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F288D342A61E580003BDBAF /* SaisonWidgetExtension */;
+			targetProxy = 2F288D422A61E583003BDBAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2F288D462A61E583003BDBAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4547XKP6B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaisonWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SaisonWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacite.Saison.SaisonWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F288D472A61E583003BDBAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4547XKP6B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaisonWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SaisonWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacite.Saison.SaisonWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2F395D4D2A61926800E39B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -286,6 +454,7 @@
 		2F395D502A61926800E39B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +484,7 @@
 		2F395D512A61926800E39B44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +514,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F288D452A61E583003BDBAF /* Build configuration list for PBXNativeTarget "SaisonWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F288D462A61E583003BDBAF /* Debug */,
+				2F288D472A61E583003BDBAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2F395D3C2A61926400E39B44 /* Build configuration list for PBXProject "Saison" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -365,6 +544,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F288D492A61EBB7003BDBAF /* SaisonData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SaisonData;
+		};
 		2F395D582A61A99C00E39B44 /* SaisonData */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SaisonData;
